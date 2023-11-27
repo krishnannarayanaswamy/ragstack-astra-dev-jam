@@ -22,11 +22,11 @@ build a Gen AI agent using DataStax Astra platform.
 
 This Dev Jam has number different projects to pick from. Excited! , you can pick all!
 
-astrachatbot - this module let's you crawl a webpage, break the data into chunks, embed , store and build a RAG enabled chatbot and deploy into production. It has got a Cool UI!
+[astrachatbot](astrachatbot/README.md) - this module let's you crawl a webpage, break the data into chunks, embed , store and build a RAG enabled chatbot and deploy into production. It has got a Cool UI!
 
-ragbot - this module takes in data using a json file , break the data into chunks, embed , store and build a RAG enabled chatbot and deploy into production.
+[ragbot](ragbot/README.md) - this module takes in data using a json file , break the data into chunks, embed , store and build a RAG enabled chatbot and deploy into production.
 
-ragstack - built using DataStax RAGStack , a Gen AI full stack to take your agents in production in minutes. This module has variety of datasources (crawl a webpage, take PDFs from object store) and has a full fledged chatbot build using RAGStack
+[ragstack](ragstack/README.md) - built using DataStax RAGStack , a Gen AI full stack to take your agents in production in minutes. This module has variety of datasources (crawl a webpage, take PDFs from object store) and has a full fledged chatbot build using RAGStack
 
 Frameworks/Stack used to Build a Production Gen AI Agent
 - RAGStack
