@@ -47,7 +47,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <p className="chatbot-text-secondary-inverse text-sm md:text-base mt-2 md:mt-4">Chatting with the RAGBot is a breeze! Simply type your questions or requests in a clear and concise manner. Responses are driven by Retrival Augmented Generation (RAG) from relevant content stored in Astra vector database and LLM. Sometimes link may be provided for further reading is provided.</p>
+          <p className="chatbot-text-secondary-inverse text-sm md:text-base mt-2 md:mt-4">Chatting with the FTB Chatbot is a breeze! Simply type your questions or requests in a clear and concise manner. Responses are driven by Retrival Augmented Generation (RAG) from relevant content stored in Astra vector database and LLM. Sometimes link may be provided for further reading is provided.</p>
         </div>
         <div className='flex-1 relative overflow-y-auto my-4 md:my-6'>
           <div className='absolute w-full overflow-x-hidden'>

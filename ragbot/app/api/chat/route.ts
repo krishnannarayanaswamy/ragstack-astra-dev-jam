@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     if (useRag) {
       const {data} = await openai.embeddings.create({input: latestMessage, model: 'text-embedding-ada-002'});
 
-      const collection = await astraDb.collection(`chat_${similarityMetric}`);
+      const collection = await astraDb.collection(`ftb_bank_chatbot`);
 
       const cursor= collection.find(null, {
         sort: {
@@ -38,9 +38,10 @@ export async function POST(req: Request) {
     const ragPrompt = [
       {
         role: 'system',
-        content: `You are an AI assistant answering questions about Cassandra and Astra DB. Format responses using markdown where applicable.
+        content: `You are an AI assistant answering questions about World Information Technology Company in Thailand. Answer question based on the context information which is extracted from their webpage. Format responses using markdown where applicable.
         ${docContext} 
         If the answer is not provided in the context, the AI assistant will say, "I'm sorry, I don't know the answer".
+        If the user asks for delivery related questions, ask him for a delivery code
       `,
       },
     ]

@@ -2,8 +2,8 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata = {
-  title: "RAGBot Starter",
-  description: "RAGBot Starter - Powered by DataStax and Vercel",
+  title: "FTB ChatBot",
+  description: "FTB ChatBot - Powered by AI with DataStax",
 };
 
 export default function RootLayout({ children }) {
