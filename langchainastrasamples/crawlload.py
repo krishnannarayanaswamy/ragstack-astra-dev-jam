@@ -13,7 +13,7 @@ apify_api_key=os.environ["APIFY_API_TOKEN"]
 
 vstore = AstraDB(
     embedding=OpenAIEmbeddings(),
-    collection_name="sbily_bank_chatbot",
+    collection_name="dgb_bank_chatbot",
     api_endpoint=api_endpoint,
     token=token,
 )
@@ -29,7 +29,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 loader = apify.call_actor(
    actor_id="apify/website-content-crawler",
-    run_input={"startUrls": [{"url": "https://www.sbilhbank.com.kh/en/"}]},
+    run_input={"startUrls": [{"url": "35Seychelles"}]},
     dataset_mapping_function=lambda item: Document(
         page_content=item["text"] or "", metadata={"source": item["url"]}
     ),

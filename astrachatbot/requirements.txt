@@ -2,4 +2,4 @@ fastapi
 uvicorn[standard]
 openai
 tiktoken
-langchain
+ragstack-ai
