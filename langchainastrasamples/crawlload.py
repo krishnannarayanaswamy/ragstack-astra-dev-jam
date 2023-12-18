@@ -36,7 +36,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 #)
 
 loader = ApifyDatasetLoader(
-    dataset_id="l7IKcZNB7lCGO0h6A",
+    dataset_id="uYNW17QrMs5b6ppQ5",
     dataset_mapping_function=lambda dataset_item: Document(
         page_content=dataset_item["text"], metadata={"source": dataset_item["url"]}
     ),
