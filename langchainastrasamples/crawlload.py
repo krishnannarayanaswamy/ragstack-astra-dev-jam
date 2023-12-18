@@ -27,20 +27,20 @@ text_splitter = RecursiveCharacterTextSplitter(
     is_separator_regex = False,
 )
 
-loader = apify.call_actor(
-   actor_id="apify/website-content-crawler",
-    run_input={"startUrls": [{"url": "35Seychelles"}]},
-    dataset_mapping_function=lambda item: Document(
-        page_content=item["text"] or "", metadata={"source": item["url"]}
-    ),
-)
-
-#loader = ApifyDatasetLoader(
-#    dataset_id="l7IKcZNB7lCGO0h6A",
-#    dataset_mapping_function=lambda dataset_item: Document(
-#        page_content=dataset_item["text"], metadata={"source": dataset_item["url"]}
+#loader = apify.call_actor(
+#   actor_id="apify/website-content-crawler",
+#    run_input={"startUrls": [{"url": "https://ftb.com.kh/en/"}]},
+#    dataset_mapping_function=lambda item: Document(
+#        page_content=item["text"] or "", metadata={"source": item["url"]}
 #    ),
 #)
+
+loader = ApifyDatasetLoader(
+    dataset_id="l7IKcZNB7lCGO0h6A",
+    dataset_mapping_function=lambda dataset_item: Document(
+        page_content=dataset_item["text"], metadata={"source": dataset_item["url"]}
+    ),
+)
 
 docs = loader.load()
 
