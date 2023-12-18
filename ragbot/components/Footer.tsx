@@ -32,7 +32,6 @@ const Footer = () => {
           </clipPath>
           </defs>
         </svg>
-        <span className="mx-1">and</span>
       </div>
     </footer>
   );
